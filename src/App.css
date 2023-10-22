@@ -8,3 +8,17 @@
     background-color: rgb(155, 90, 5);
     border-radius: 12px;
 }
+
+/* Popular slider */
+.slider{
+    perspective: 800px;
+    outline: none;
+}
+.slider img{
+    transition: transform 0.3s ease;
+}
+.slider img:hover{
+    transform: translateZ(145px);
+    /* transform: translate3d(200px) */
+
+}
