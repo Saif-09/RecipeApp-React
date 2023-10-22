@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -14,11 +15,23 @@ const Navbar = () => {
             type="text" />
         </div>
         <div className="right flex justify-center items-center w-[34%]">
+          <Link to=''>
             <div>Indian</div>
-            <div>American</div>
-            <div>Chineese</div>
+          </Link>
+          <Link to=''>
             <div>Italian</div>
+          </Link>
+          <Link to=''>
+            <div>Chinese</div>
+          </Link>
+          <Link to=''>
+            <div>American</div>
+          </Link>
+          <Link to=''>
             <div>Thai</div>
+          </Link>
+            
+            
         </div>
     </div>
     </>
