@@ -1,0 +1,10 @@
+/* Navbar */
+.right div{
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.right div:hover{
+    background-color: rgb(155, 90, 5);
+    border-radius: 12px;
+}
