@@ -1,11 +1,19 @@
 import React from 'react';
 import Home from './components/Home';
-import './App.css'
+import Recipe from './components/Recipe';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
     <>
-    <Home/>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/:idMeal' element={<Recipe/>}/>
+      </Routes>
+    </Router>
+    
     </>
   )
 }

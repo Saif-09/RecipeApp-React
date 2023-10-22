@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const PopularSlider = () => {
   const [data, setData] = useState([]);
@@ -41,11 +42,13 @@ const PopularSlider = () => {
           
         {data.map((item, key)=>{
       return(
+        <Link to={`/${item.idMeal}`}>
         <div className='slider flex items-center justify-center m-8 ml-8'>
           <img className="w-72 h-64 rounded-lg border-orange-600 border-2" src={item.strMealThumb} alt={item.strMeal} />
           <h2 className='text-2xl text-[#af5911] font-semibold ml-24'>{item.strMeal}</h2>
 
         </div>
+        </Link>
       )
     })}
           

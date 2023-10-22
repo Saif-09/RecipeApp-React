@@ -22,3 +22,17 @@
     /* transform: translate3d(200px) */
 
 }
+
+/* Trending slider */
+.slider2{
+    perspective: 800px;
+    outline: none;
+}
+.slider2 img{
+    transition: transform 0.3s ease;
+}
+.slider2 img:hover{
+    transform: translateZ(150px);
+    /* transform: translate3d(200px) */
+
+}
