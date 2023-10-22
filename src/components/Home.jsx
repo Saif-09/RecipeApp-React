@@ -9,6 +9,7 @@ const Home = () => {
     <div className='main m-0 p-0'>
       <Navbar/>
       <PopularSlider/>
+      <TrendingSlider/>
       </div>
       
       

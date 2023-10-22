@@ -35,6 +35,7 @@ const PopularSlider = () => {
   return (
     <>
     <div className='h-[56vh] w-[90%] m-16'>
+      <h1 className='text-4xl text-[#af5911] font-semibold text-center uppercase mb-2'>Popular Dishes⭐</h1>
         
         <Slider {...settings}>
           
@@ -50,9 +51,6 @@ const PopularSlider = () => {
           
         </Slider>
       </div>
-    
-    
-     
     </>
   )
 }
