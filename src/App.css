@@ -36,3 +36,17 @@
     /* transform: translate3d(200px) */
 
 }
+
+/* Popular slider */
+.catagoryImg{
+    perspective: 800px;
+    outline: none;
+}
+.catagoryImg img{
+    transition: transform 0.3s ease;
+}
+.catagoryImg img:hover{
+    transform: translateZ(145px);
+    /* transform: translate3d(200px) */
+
+}

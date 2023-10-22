@@ -44,7 +44,7 @@ const TrendingSlider = () => {
         <Link to={`/${item.idMeal}`} key={item.idMeal}>
         <div className='slider2 flex flex-col items-center justify-between m-6 ml-8'>
           <img className="w-48 h-48 rounded-lg border-orange-600 border-2" src={item.strMealThumb} alt={item.strMeal} />
-          <h2 className='text-2xl text-[#af5911] font-semibold text-center mr-10'>{item.strMeal}</h2>
+          <h2 className='text-lg text-[#af5911] font-semibold text-center '>{item.strMeal}</h2>
 
         </div>
         </Link>
