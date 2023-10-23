@@ -12,7 +12,7 @@ const Recipe = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Fetch data here and call setData with the result.
+                
                 const api = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`);
                 const response = await api.json();
 
