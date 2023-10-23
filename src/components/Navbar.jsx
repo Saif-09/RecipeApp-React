@@ -14,7 +14,7 @@ const Navbar = () => {
       
         <div className="left flex justify-center items-center">
         <Link to='/'>
-            <h1 className='text-3xl font-bold ml-20'>Recipe App</h1>
+            <h1 className='text-3xl font-bold ml-10'>Recipe App</h1>
             </Link>
         </div>
         
@@ -29,7 +29,7 @@ const Navbar = () => {
           </form>
             
         </div>
-        <div className="right flex justify-center items-center w-[34%]">
+        <div className="right flex justify-center items-center w-[40%]">
           <Link to={`/category/Indian`}>
             <div>Indian</div>
           </Link>
@@ -45,7 +45,9 @@ const Navbar = () => {
           <Link to={`/category/Thai`}>
             <div>Thai</div>
           </Link>
-            
+          <Link to="/favorites">
+            <div>Favorites</div>
+          </Link>
             
         </div>
     </div>

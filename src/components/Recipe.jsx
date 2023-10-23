@@ -8,6 +8,16 @@ const Recipe = () => {
     const { idMeal } = useParams();
     const [data, setData] = useState([]);
     const [active, setActive] = useState('ingredient');
+    const [favorites, setFavorites] = useState([]);
+
+    const addToFavorites = () => {
+        if (data.length > 0) {
+            // Check if the recipe data is available
+            const newFavorites = [...favorites, data];
+            setFavorites(newFavorites);
+            alert('Recipe added to favorites!');
+        }
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -49,6 +59,7 @@ const Recipe = () => {
                             <div className='ml-24'>
                                 <button onClick={() => setActive('ingredient')} className="bg-[#ff9019] text-white font-semibold py-2 px-4 rounded-md m-2 hover:bg-orange-600 transition duration-300 ease-in-out">Ingredients</button>
                                 <button onClick={() => setActive('instruction')} className="bg-[#ff9019] text-white font-semibold py-2 px-4 rounded-md m-2 hover-bg-orange-600 transition duration-300 ease-in-out">Instruction</button>
+                                <button onClick={addToFavorites} className="bg-[#ff9019] text-white font-semibold py-2 px-4 rounded-md m-2 hover:bg-orange-600 transition duration-300 ease-in-out">Add to Favorites</button>
                             </div>
 
                             {active === 'ingredient' ? (
